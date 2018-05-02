@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <LinearLayout
+        android:id="@+id/ll_main_item_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ad666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_ApplyCD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/ad666666"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_CarBrandPicURL"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/xx" />
+
+        <TextView
+            android:id="@+id/tv_CarBrandName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/ad666666"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_main_item_top"
+        android:layout_toStartOf="@+id/iv_main_item_phone"
+        android:gravity="left"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_main_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/company_id" />
+
+            <TextView
+                android:id="@+id/tv_TowingcoShortName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:maxEms="6"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/ad333333"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_CTMan"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/employee_id" />
+
+            <TextView
+                android:id="@+id/tv_CTMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:singleLine="true"
+                android:textColor="@color/ad333333"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_item_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/name" />
+
+            <TextView
+                android:id="@+id/tv_CustName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:ellipsize="end"
+                android:maxEms="5"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/car_id" />
+
+            <!--android:background="@drawable/main_item_tv_stroke_bg"-->
+            <TextView
+                android:id="@+id/tv_LicensePlateNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+            <!--android:background="@drawable/main_item_tv_full_bg"-->
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="9dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/color" />
+
+            <TextView
+                android:id="@+id/tv_Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_CarModelName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_main_item_phone"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/telephone" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/ll_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/addddddd" />
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_main_item_center"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/ll_main_item_top"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:src="@drawable/company_id" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_TowingcoShortName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:text="哈尔滨解百优"-->
+    <!--android:textColor="@color/ad333333"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:src="@drawable/employee_id" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_CTMan"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="5dp"-->
+    <!--android:text="张勇连"-->
+    <!--android:textColor="@color/ad333333"-->
+    <!--android:textSize="13sp" />-->
+    <!--</LinearLayout>-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ll_main_item_bottom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/ll_main_item_center"-->
+    <!--android:layout_marginBottom="15dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:layout_toStartOf="@+id/iv_main_item_phone"-->
+    <!--android:gravity="center_vertical">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="8dp"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:layout_marginStart="6dp"-->
+    <!--android:src="@drawable/name" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_CustName"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="6dp"-->
+    <!--android:text="王勇华"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="7dp"-->
+    <!--android:layout_height="10dp"-->
+    <!--android:layout_marginStart="11dp"-->
+    <!--android:src="@drawable/car_id" />-->
+
+    <!--&lt;!&ndash;android:background="@drawable/main_item_tv_stroke_bg"&ndash;&gt;-->
+    <!--<TextView-->
+    <!--android:id="@+id/tv_LicensePlateNo"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="6dp"-->
+    <!--android:ellipsize="end"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="吉BKN3399"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="14sp" />-->
+
+    <!--&lt;!&ndash;android:background="@drawable/main_item_tv_full_bg"&ndash;&gt;-->
+    <!--<ImageView-->
+    <!--android:layout_width="10dp"-->
+    <!--android:layout_height="9dp"-->
+    <!--android:layout_marginStart="16dp"-->
+    <!--android:src="@drawable/color" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_Color"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="7dp"-->
+    <!--android:ellipsize="end"-->
+    <!--android:maxLines="1"-->
+    <!--android:text="摩卡棕"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="14sp" />-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

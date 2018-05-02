@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="20dp"
+    android:paddingTop="15dp">
+
+    <TextView
+        android:id="@+id/tv_message_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mt9c9c9c"
+        android:textSize="12sp"
+        android:text="ssssss"/>
+
+    <TextView
+        android:id="@+id/tv_message_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_message_item_date"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/mt9c9c9c"
+        android:textSize="15sp"
+        android:text="ssssss"/>
+
+    <ImageView
+        android:id="@+id/iv_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/tv_message_item_content"
+        android:src="@drawable/icon_next"/>
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_message_item_content"
+        android:layout_marginTop="50px"
+        android:background="@color/adbcbcbc"/>
+</RelativeLayout>

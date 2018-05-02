@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_head_first"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/fc_main_bg" />
+
+    <LinearLayout
+        android:id="@+id/view_head_bg"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bill_detail_head_bg"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999999" />
+</LinearLayout>

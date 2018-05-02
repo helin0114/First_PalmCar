@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fc_weekly_scheduling_layout_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/layout_tasks_title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        app:contentInsetStart="0dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:text="@string/week_manager"
+                android:textColor="@color/ad333333"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <TextView
+                android:id="@+id/iv_transfer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:visibility="gone"
+                android:text="转派"
+                android:textSize="10sp"
+                android:textColor="@color/ad666666"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/weekly_schudeling_transfer" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/fc_tl_tasks_label"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@+id/layout_tasks_title"
+        android:background="@android:color/white"
+        app:tabIndicatorColor="@color/fc_text_blue"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="@color/fc_text_blue"
+        app:tabTextAppearance="@style/FcTabLayoutTextStyle"
+        app:tabTextColor="@color/ad666666" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fc_vp_tasks_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fc_tl_tasks_label"
+        android:overScrollMode="never" />
+
+    <RelativeLayout
+        android:id="@+id/layout_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_tasks_title"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#36000000" />
+
+        <RadioGroup
+            android:id="@+id/rg_weeklly_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:paddingBottom="10dp">
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="确  认"
+            android:gravity="center"
+            android:background="@color/fc_text_blue"/>
+
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:id="@+id/mcv_fcs_weekly_scheduling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_above="@+id/tv_sure"
+            app:mcv_dateTextAppearance="@android:color/black"
+            app:mcv_selectionColor="@android:color/white"
+            app:mcv_weekDayLabels="@array/custom_weekdays" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/layout_title_choose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_tasks_title"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:id="@+id/fl_title_choose_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#36000000" />
+
+        <LinearLayout
+            android:id="@+id/layout_name_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:background="@android:color/white">
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

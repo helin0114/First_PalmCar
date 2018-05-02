@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mtdcdcdc"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/et_search_apply_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/admin_shape_search_stroke"
+                android:hint="申请编号"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="16dp"
+                android:textColorHint="@color/mt9f9b92"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <EditText
+                android:id="@+id/et_search_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/big"
+                android:hint="手机号码"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="16dp"
+                android:textColorHint="@color/mt9f9b92"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/et_search_plate_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/big"
+                android:hint="车牌号码"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="16dp"
+                android:textColorHint="@color/mt9f9b92"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="GPS状态"/>
+
+        <RadioGroup
+            android:id="@+id/rg_gps_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="  全部"
+                android:checked="true"
+                android:textColor="@color/mt9f9b92"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_online"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="  在线"
+                android:textColor="@color/mt9f9b92"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_lose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="  失联"
+                android:textColor="@color/mt9f9b92"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_dormancy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="  休眠"
+                android:textColor="@color/mt9f9b92"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btn_search_cancal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_normal_bg"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_search_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_press_bg"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

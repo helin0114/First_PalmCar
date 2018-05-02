@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_calendar_newfc_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_calendar_sure"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fc_text_blue"
+        android:gravity="center"
+        android:text="确  认"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_calendar_sure"
+        android:background="@android:color/white"
+        app:mcv_dateTextAppearance="@android:color/black"
+        app:mcv_selectionColor="@android:color/white"
+        app:mcv_weekDayLabels="@array/custom_weekdays"/>
+
+</RelativeLayout>

@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cango.application.location.LocationFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_trailer_map"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/mt1c213d"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:id="@+id/ll_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_map_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="@string/location"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_toolbar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="26px"
+            android:orientation="vertical"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center"
+            android:layout_alignParentTop="true">
+            <ImageView
+                android:layout_width="48px"
+                android:layout_height="48px"
+                android:src="@drawable/trajectory"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:textColor="@android:color/white"
+                android:textSize="13sp"
+                android:text="@string/track_query"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_trailer_map"
+        android:layout_above="@+id/rl_map_bottom">
+
+        <fragment
+            android:id="@+id/fg_map"
+            class="com.amap.api.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_map_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mt303030"
+                android:textSize="52px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignBottom="@+id/tv_name"
+                android:layout_marginRight="220px">
+                <TextView
+                    android:id="@+id/tv_prompt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每"
+                    android:textColor="@color/mt303030"
+                    android:textSize="42px" />
+                <TextView
+                    android:id="@+id/tv_prompt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="42px" />
+                <TextView
+                    android:id="@+id/tv_prompt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="秒后重定位，当前地址"
+                    android:textColor="@color/mt303030"
+                    android:textSize="42px" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:layout_marginTop="20px"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="42px" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/iv_map_nav"
+        android:layout_width="160px"
+        android:layout_height="160px"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="180px"
+        android:layout_marginRight="50px"
+        android:src="@drawable/navigation" />
+    <ImageView
+        android:id="@+id/iv_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_trailer_map"
+        android:background="#36000000"
+        android:visibility="gone">
+    </ImageView>
+    <include layout="@layout/avload_view"/>
+</RelativeLayout>

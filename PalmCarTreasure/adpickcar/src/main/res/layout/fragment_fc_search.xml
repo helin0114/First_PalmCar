@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_fc_search"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:textColor="@color/ad333333"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/fc_main_search" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <!--<TextView
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/fc_text_blue"
+        android:gravity="center"
+        android:text="确  认"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />-->
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fc_srl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fc_search"
+        android:background="@color/fc_main_bg">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/fc_recyclerview_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/fc_main_bg"
+            android:overScrollMode="never" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:id="@+id/layout_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_fc_search"
+        android:background="#66000000" />
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_fc_search"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <EditText
+            android:id="@+id/et_PlateNO"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/login_et_bg_shape"
+            android:gravity="center_vertical"
+            android:hint="车牌号码"
+            android:maxLines="1"
+            android:paddingEnd="21dp"
+            android:paddingStart="21dp"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textColorHint="@color/adbbbbbb"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:id="@+id/et_Name"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/login_et_bg_shape"
+                android:gravity="center_vertical"
+                android:hint="客户姓名"
+                android:maxLines="1"
+                android:paddingEnd="21dp"
+                android:paddingStart="21dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/adbbbbbb"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/et_phoneNum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/login_et_bg_shape"
+                android:gravity="center_vertical"
+                android:hint="手机号"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingEnd="21dp"
+                android:paddingStart="21dp"
+                android:imeOptions="actionSearch"
+                android:singleLine="true"
+                android:textColorHint="@color/adbbbbbb"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include layout="@layout/no_data" />
+
+    <include layout="@layout/sorry" />
+
+    <include layout="@layout/avload_view" />
+</RelativeLayout>

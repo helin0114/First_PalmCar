@@ -1,0 +1,561 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_main_car_info"
+    tools:context="com.cango.adpickcar.detail.basicinfo.BasicInfoFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_car"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车型描述" />
+
+                </LinearLayout>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_carmodeltext"-->
+                    <!--style="@style/ADDetailCarText" />-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:id="@+id/tv_carmodeltext"
+                        style="@style/ADDetailCarText"
+                        android:lineSpacingExtra="5dp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="品牌" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_CarBrandName"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车系" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_carSeriesName"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/ADDetailETStyle"
+                            android:text="车型"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车型是否与ERP相同" />
+
+                    <!--<Switch-->
+                    <!--android:id="@+id/switch_isERPMapping"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginStart="10dp" />-->
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_isERPMapping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textOff="否"
+                        android:textOn="是"
+                        app:showText="true"
+                        android:layout_marginStart="10dp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/ADDetailETStyle"
+                            android:text="车型" />
+
+                    </LinearLayout>
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_CarModelName"-->
+                    <!--style="@style/ADDetailCarText" />-->
+                    <!--<LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/detail_et_bg_2">
+
+                        <Spinner
+                            android:id="@+id/sp_carmodelname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_model_name"-->
+                        <!--style="@style/ADDetailCarText" />-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/tv_model_name"
+                            style="@style/ADDetailCarText"
+                            android:lineSpacingExtra="5dp" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_model_name_inpractice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="12dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="实际车型" />
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/tv_CarModelName"-->
+                    <!--style="@style/ADDetailCarText" />-->
+                    <!--<LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/detail_et_bg_2">
+
+                        <Spinner
+                            android:id="@+id/sp_carmodelname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>-->
+                    <TextView
+                        android:id="@+id/tv_model_name_inpractice"
+                        style="@style/ADDetailCarText" />
+
+                    <TextView
+                        android:id="@+id/tv_car_model_name_alter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="修改"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@color/adeaeaea">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="牌照号码" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_photo_number"
+                    style="@style/ADDetailCarText" />
+
+                <TextView
+                    android:id="@+id/tv_car_info_alter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="修改"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="颜色" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_color"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="处置车辆编号" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_discarno"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="申请编号" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_applycd"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="金融公司" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_fininstid"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="区域公司" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_orgid"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="VIN码" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_vin"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="客户名称" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_custname"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="牌照类型" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_licenseplatetype"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车辆合格证号" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_carcertno"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/adeaeaea"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="出场年份" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_mfyear"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="发动机号" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_engineno"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:background="@color/adeaeaea"
+                android:layout_marginBottom="50dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="机动车登记证书号" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_carregno"
+                    style="@style/ADDetailCarText" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/sorry" />
+
+    <include layout="@layout/no_data" />
+</RelativeLayout>

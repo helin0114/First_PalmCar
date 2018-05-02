@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">灿谷车辆定位</string>
+    <string name="login">登&#12288;录</string>
+    <string name="newline">\n</string>
+    <string name="location">定位</string>
+    <!-- permissions prompt-->
+    <string name="read_phone_state">登录前必须获得读取手机状态和位置的权限</string>
+    <string name="setting_read_phone_state">请到设置中授权读取手机状态和位置的权限</string>
+    <string name="location_group_and_storage">必须授权位置和存储空间的权限</string>
+    <string name="setting_group_and_storage">请到设置中授权位置和存储空间的权限</string>
+    <string name="no_get_location">未能获取位置，请稍后尝试！</string>
+    <string name="put_sim_and_permissions">插入sim卡或开启相关权限！</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="look_location">查看定位</string>
+    <string name="please_input_IMEI">请输入IMEI</string>
+    <string name="track_query">轨迹查询</string>
+    <string name="query">查&#12288;询</string>
+    <string name="baidu_map">百度地图</string>
+    <string name="gaode_map">高德地图</string>
+    <string name="trajectory_title">轨迹展示</string>
+    <string name="data_error">暂无数据信息</string>
+    <string name="test">我\n你</string>
+    <string name="no_get_last_gps">未获取最后一次定位信息</string>
+</resources>

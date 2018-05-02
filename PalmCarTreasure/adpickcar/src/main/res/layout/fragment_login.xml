@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/bg" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:text="登录"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="82dp"
+        android:layout_height="82dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:id="@+id/ll_login_username"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/iv_login_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/login_et_bg_shape"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/phone_icon" />
+
+        <EditText
+            android:id="@+id/et_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="21dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="请输入您的账号"
+            android:maxLines="1"
+            android:textColorHint="@color/adbbbbbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login_password"
+        android:layout_width="280dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/ll_login_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:background="@drawable/login_et_bg_shape"
+        android:gravity="center_vertical"
+        android:maxLines="1">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/password_icon" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="21dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:inputType="textPassword"
+            android:hint="请输入您的密码"
+            android:textColorHint="@color/adbbbbbb"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login_signin"
+        android:layout_width="300dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/ll_login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/sign_in_icon"
+        android:gravity="top|center_horizontal"
+        android:paddingTop="16dp"
+        android:text="登 录"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="上海灿谷投资管理咨询服务有限公司"
+        android:textColor="@color/adbcbcbc"
+        android:textSize="9sp" />
+    <include layout="@layout/avload_view"/>
+</RelativeLayout>

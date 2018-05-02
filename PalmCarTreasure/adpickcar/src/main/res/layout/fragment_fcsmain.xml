@@ -1,0 +1,56 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fc_main_bg"
+    tools:context="com.cango.adpickcar.fc.fcs.FCSMainFragment">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fcs_main_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/everyday_fcs_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fcs_index"
+        android:textColor="@color/ad333333"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/fcs_main_toolbar"
+        app:layout_constraintEnd_toEndOf="@+id/fcs_main_toolbar"
+        app:layout_constraintStart_toStartOf="@+id/fcs_main_toolbar"
+        app:layout_constraintTop_toTopOf="@+id/fcs_main_toolbar" />
+    
+    <com.cango.adpickcar.customview.ADHistogramView
+        android:id="@+id/custom_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fcs_main_toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/custom_bottom"
+        app:layout_constraintVertical_weight="1"/>
+
+    <com.cango.adpickcar.customview.ADHistogramView
+        android:id="@+id/custom_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/custom_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_weight="1"/>
+
+
+</android.support.constraint.ConstraintLayout>

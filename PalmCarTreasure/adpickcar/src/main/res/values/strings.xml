@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">蓝金刚</string>
+    <string name="drawer_open">打开</string>
+    <string name="drawer_close">关闭</string>
+    <string name="load_end_tip">已经全部加载完毕</string>
+    <string name="load_loading_tip">努力加载中</string>
+    <string name="load_failed_tip">点我再试试？</string>
+    <string name="read_phone_state">必须授权读取手机状态和存储权限及照相机权限</string>
+    <string name="setting_read_phone_state">请到设置中授权读取手机状态和存储权限及照相机权限</string>
+    <string name="request_storage_group">必须授权存储空间的权限</string>
+    <string name="setting_request_storage_group">请到设置中授权存储空间的权限</string>
+    <string name="camera_permission_confirmation">需要打开使用摄像头权限及存储权限</string>
+    <string name="location_group_and_storage">必须授权位置和存储空间的权限</string>
+    <string name="setting_group_and_storage">请到设置中授权位置和存储空间的权限</string>
+    <string name="camera_permission_not_granted">需要设备拥有摄像头</string>
+    <string name="camera_is_opening">照相机正在启动</string>
+    <string name="picture_taken">Picture taken</string>
+    <string name="aspect_ratio">Aspect ratio</string>
+    <string name="switch_flash">Switch flash</string>
+    <string name="switch_camera">Switch camera</string>
+    <string name="flash_auto">Flash auto</string>
+    <string name="flash_off">Flash off</string>
+    <string name="flash_on">Flash on</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="main_title">接&#160;&#160;车</string>
+    <string name="main_jiaoche">交&#160;&#160;车</string>
+    <string name="input_params_prompt">请输入查询内容</string>
+    <string name="space_text">&#160;&#160;</string>
+    <string name="fc_title">首&#160;&#160;页</string>
+    <string name="fc_main_title">任&#160;&#160;务</string>
+    <string name="fc_mine_title">我&#160;&#160;的</string>
+    <string name="no_get_last_gps">未获取最后一次定位信息</string>
+    <string name="data_error">暂无数据信息</string>
+    <!--当后台数据异常的时候-->
+    <string name="data_unusual">数据异常</string>
+    <string name="get_gallery_failure">获取相册图片失败</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!--日常-->
+    <string name="everyday_title">日&#160;&#160;常</string>
+    <string name="daily_account_name">记账管理</string>
+    <string name="daily_account_prompt">差旅费/燃油费/过路费</string>
+    <string name="daily_download_name">下载管理</string>
+    <string name="daily_download_prompt">任务书/催收函/分享</string>
+    <string name="tally_book">记账本</string>
+    <string name="eve_name">旅馆</string>
+    <string name="cross_name">汽车费</string>
+    <string name="express_name">快递费</string>
+    <string name="other_name">其他</string>
+    <string name="meals_name">餐费</string>
+    <string name="traffic_name">出租/公交</string>
+    <string name="train_name">火车/客车</string>
+    <string name="date_prompt">日期</string>
+    <string name="reimbursement_amount_prompt">报销金额</string>
+    <string name="reimbursement_from_to">从/到</string>
+    <string name="confirm">确&#160;&#160;认</string>
+    <string name="choose_tally_date">选择记账日期</string>
+
+    <!--FC-->
+    <string name="fc_home">家访</string>
+    <string name="first_home">初次家访</string>
+    <string name="first_home_task">家访明细任务跟进</string>
+    <string name="home_visit_follow">家访跟进</string>
+    <string name="home_visit_follow_detail">跟进案子子任务</string>
+    <string name="week_detail">查询/申请/调整申请</string>
+    <string name="task_today">今日任务</string>
+    <string name="task_threeday">三日任务</string>
+    <string name="task_all">全部任务</string>
+    <string name="task_week">本周任务</string>
+    <string name="GPS_location">GPS定位</string>
+
+    <!--FCS-->
+    <string name="fcs_index">首&#160;&#160;页</string>
+    <string name="fcs_manager">管理</string>
+    <string name="fcs_everyday">日常</string>
+    <string name="fcs_my">我的</string>
+    <string name="first_home_manager">家访初访管理</string>
+    <string name="first_home_task_manager">家访明细任务管理</string>
+    <string name="visit_manager">家访跟进管理</string>
+    <string name="visit_detail_manager">家访跟进明细管理</string>
+    <string name="week_manager">周行程管理</string>
+    <string name="week_detail_manager">查询/审批/微调</string>
+    <string name="title_activity_fcsmain">FCSMainActivity</string>
+    <string name="task_new">新任务</string>
+    <string name="task_approval">待审批</string>
+    <string name="task_feedback">待反馈</string>
+</resources>

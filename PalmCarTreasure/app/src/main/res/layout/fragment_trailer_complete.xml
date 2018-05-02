@@ -1,0 +1,563 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_complete"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_map_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/trailer_over"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_complete">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/first_question"
+                    android:textColor="@color/mt727171"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/mtc90000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_first_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  立即通知"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_first_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  延迟通知"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  客户亲朋"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+
+                <RadioButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  客户亲朋"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mtdcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/second_question"
+                    android:textColor="@color/mt727171"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/mtc90000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_second_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  客户本人"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_second_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  客户亲朋"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_second_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  抵押车行"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_second_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  未确认"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mtdcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/third_question"
+                    android:textColor="@color/mt727171"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/mtc90000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_third_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  谈判交车"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_third_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  强行拖回"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_third_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  技巧哄诱"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/rb_third_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/radio_button_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  钥匙开回"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mtdcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fourth_question"
+                    android:textColor="@color/mt727171"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/mtc90000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="7dp">
+
+                <CheckBox
+                    android:id="@+id/cb_fourth_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  肢体冲突"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_fourth_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  车辆受损"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_fourth_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  无冲突"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:visibility="invisible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  钥匙开回"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/mtdcdcdc" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fifth_question"
+                    android:textColor="@color/mt727171"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/mtc90000"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="7dp">
+
+                <CheckBox
+                    android:id="@+id/cb_fifth_one"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  追车"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_fifth_two"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  报警"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_fifth_three"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  情绪激动"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+
+                <CheckBox
+                    android:id="@+id/cb_fifth_four"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_selector"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="  未确认"
+                    android:textColor="@color/mt9c9c9c"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sixth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/mtdcdcdc" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sixth_question"
+                        android:textColor="@color/mt727171"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*"
+                        android:textColor="@color/mtc90000"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/rg_sixth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="7dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rb_sixth_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_button_selector"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="  立即通知"
+                        android:textColor="@color/mt9c9c9c"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sixth_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_button_selector"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="  延迟通知"
+                        android:textColor="@color/mt9c9c9c"
+                        android:textSize="13sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sixth_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/radio_button_selector"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp"
+                        android:text="  客户亲朋"
+                        android:textColor="@color/mt9c9c9c"
+                        android:textSize="13sp" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/rg_seventh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical">
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_complete_confirm"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/button_press_bg"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="@string/confirm"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/avload_view"/>
+</RelativeLayout>

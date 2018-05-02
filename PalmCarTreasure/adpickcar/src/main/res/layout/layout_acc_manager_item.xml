@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/iv_evection"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_evection_bg"
+        android:gravity="center"
+        android:text="@string/eve_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_meal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acc_mgr_toolbar" />
+
+    <CheckBox
+        android:id="@+id/iv_meal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_meal_bg"
+        android:gravity="center"
+        android:text="@string/meals_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_traffic"
+        app:layout_constraintStart_toEndOf="@+id/iv_evection"
+        app:layout_constraintTop_toTopOf="@+id/iv_evection" />
+
+    <CheckBox
+        android:id="@+id/iv_traffic"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_traffic_bg"
+        android:gravity="center"
+        android:text="@string/traffic_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_train"
+        app:layout_constraintStart_toEndOf="@+id/iv_meal"
+        app:layout_constraintTop_toTopOf="@+id/iv_meal" />
+
+    <CheckBox
+        android:id="@+id/iv_train"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_train_bg"
+        android:gravity="center"
+        android:text="@string/train_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_traffic"
+        app:layout_constraintTop_toTopOf="@+id/iv_traffic" />
+
+    <CheckBox
+        android:id="@+id/iv_crossing"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_crossing_bg"
+        android:gravity="center"
+        android:text="@string/cross_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_express"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_evection" />
+
+    <CheckBox
+        android:id="@+id/iv_express"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_express_bg"
+        android:gravity="center"
+        android:text="@string/express_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_other"
+        app:layout_constraintStart_toEndOf="@+id/iv_crossing"
+        app:layout_constraintTop_toTopOf="@+id/iv_crossing" />
+
+    <CheckBox
+        android:id="@+id/iv_other"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_other_bg"
+        android:gravity="center"
+        android:text="@string/other_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_null"
+        app:layout_constraintStart_toEndOf="@+id/iv_express"
+        app:layout_constraintTop_toTopOf="@+id/iv_express" />
+
+    <CheckBox
+        android:id="@+id/iv_null"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:drawablePadding="12dp"
+        android:drawableTop="@drawable/rb_other_bg"
+        android:gravity="center"
+        android:text="@string/train_name"
+        android:textColor="@color/ad666666"
+        android:textSize="12sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_other"
+        app:layout_constraintTop_toTopOf="@+id/iv_other" />
+</android.support.constraint.ConstraintLayout>

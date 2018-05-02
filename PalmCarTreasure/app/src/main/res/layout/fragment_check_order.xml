@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_order"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/toolbar_bg"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/tv_order_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="拖车信息"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/ll_order_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_order"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请确认客户姓名"
+                android:textColor="@color/mt727171"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/mtc90000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_first_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_first_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_first_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/mtdcdcdc" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请确认车牌号码"
+                android:textColor="@color/mt727171"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textColor="@color/mtc90000"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rg_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="7dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rb_second_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_second_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+
+            <RadioButton
+                android:id="@+id/rb_second_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_button_selector"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:textColor="@color/mt9c9c9c"
+                android:textSize="13sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_order_submit"
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_press_bg"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <include layout="@layout/avload_view" />
+
+    <include layout="@layout/sorry" />
+</RelativeLayout>

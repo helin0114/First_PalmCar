@@ -1,0 +1,2 @@
+include ':app', ':PushSDK', ':CarLocation', ':library', ':adpickcar'
+include ':zxing'

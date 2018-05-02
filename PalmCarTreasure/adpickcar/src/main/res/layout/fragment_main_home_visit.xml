@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fc_main_bg">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/fc_toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/fc_title"
+                android:textColor="@color/ad333333"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:src="@drawable/fc_main_search" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/fc_srl_home_visit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fc_toolbar_main"
+        android:layout_marginTop="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_calendar_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#ffffff"
+                android:paddingLeft="15dp"
+                android:paddingTop="10dp"
+                android:textColor="@color/adbcbcbc"
+                android:textSize="14sp" />
+
+            <!--<com.prolificinteractive.materialcalendarview.MaterialCalendarView-->
+                <!--android:id="@+id/mcv_main_home_visit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/tv_calendar_title"-->
+                <!--android:background="@android:color/white"-->
+                <!--android:paddingBottom="9dp"-->
+                <!--app:mcv_dateTextAppearance="@android:color/black"-->
+                <!--app:mcv_selectionColor="@android:color/white"-->
+                <!--app:mcv_weekDayLabels="@array/custom_weekdays" />-->
+            <com.cango.adpickcar.customview.FcHomeMaterialCalendarView
+                android:id="@+id/mcv_main_home_visit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_calendar_title"
+                android:background="@android:color/white"
+                android:paddingBottom="9dp"
+                app:mcv_dateTextAppearance="@android:color/black"
+                app:mcv_selectionColor="@android:color/white"
+                app:mcv_weekDayLabels="@array/custom_weekdays" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_fc_main_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:paddingBottom="12dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_first_home"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="9dp">
+
+                    <ImageView
+                        android:id="@+id/iv_first_home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/fc_main_first_home" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_toRightOf="@+id/iv_first_home"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="初次家访"
+                            android:textColor="@color/ad333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="家访明细任务跟进"
+                            android:textColor="@color/ad666666"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/fc_main_bg" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_home_visit"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="9dp">
+
+                    <ImageView
+                        android:id="@+id/iv_home_visit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/fc_main_home_visit" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_toRightOf="@+id/iv_home_visit"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="家访跟进"
+                            android:textColor="@color/ad333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="跟进案子子任务"
+                            android:textColor="@color/ad666666"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_next" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginRight="2dp"
+                        android:background="@color/fc_main_bg" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_main_weekly_travel"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:background="@android:color/white"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="9dp">
+
+                    <ImageView
+                        android:id="@+id/iv_weekly_travel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/fc_main_weekly_travel" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="11dp"
+                        android:layout_toRightOf="@+id/iv_weekly_travel"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:includeFontPadding="false"
+                            android:text="周行程管理"
+                            android:textColor="@color/ad333333"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:includeFontPadding="false"
+                            android:text="查询/申请/查询申请"
+                            android:textColor="@color/ad666666"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_next" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_main_home_visit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layout_fc_main_bottom"
+                android:layout_below="@+id/mcv_main_home_visit"
+                android:layout_marginTop="1dp"
+                android:overScrollMode="never" />
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>

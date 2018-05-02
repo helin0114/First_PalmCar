@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50000000">
+            <com.google.android.cameraview.CameraView
+                android:id="@+id/camera"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                app:aspectRatio="16:9"
+                android:background="@android:color/black">
+
+            </com.google.android.cameraview.CameraView>
+            <ImageView
+                android:id="@+id/iv_shadow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/camera_bg" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/rl_camera_right"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_camera_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/rl_camera_left"
+        android:layout_toStartOf="@+id/rl_camera_right">
+
+        <RelativeLayout
+            android:id="@+id/rl_camera_prompt"
+            android:layout_width="400dp"
+            android:layout_height="200dp"
+            android:layout_above="@+id/iv_camera_prompt"
+            android:layout_alignRight="@+id/iv_camera_prompt">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/translucent"/>
+
+            <ImageView
+                android:id="@+id/iv_camera_prompt_left"
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="10dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/timg" />
+
+            <TextView
+                android:id="@+id/tv_camera_prompt_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/iv_camera_prompt_left"
+                android:layout_alignTop="@+id/iv_camera_prompt_left"
+                android:text="拍照要求："
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tv_camera_prompt_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_camera_prompt_top"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/iv_camera_prompt_left"
+                android:text="架子吱吱吱吱吱吱吱吱吱吱吱吱吱吱"
+                android:textColor="@android:color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_camera_prompt"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/explain" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_camera_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#50000000">
+
+        <ImageView
+            android:id="@+id/iv_camera_cancal"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="cancal"
+            android:padding="10dp"
+            android:src="@drawable/camera_return" />
+
+        <ImageView
+            android:id="@+id/iv_camera_flash"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:onClick="flash"
+            android:padding="10dp"
+            android:src="@drawable/flashoff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_camera_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="#50000000">
+
+        <ImageView
+            android:id="@+id/take_picture"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:src="@drawable/photograph" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/iv_camera_no"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="cameraNo"
+        android:src="@drawable/camera_cancal" />
+
+    <ImageView
+        android:id="@+id/iv_camera_ok"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:onClick="cameraOk"
+        android:src="@drawable/camera_ok" />
+
+    <include layout="@layout/avload_view"/>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cango.adpickcar.customview.SlidingButtonView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_button"
+    android:layout_width="match_parent"
+    android:layout_height="73dp"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="12dp"
+            android:paddingRight="9dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+            <ImageView
+                android:id="@+id/iv_task_overdue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fc_main_task_overdue"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/fc_main_address"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/iv_task_overdue"
+                android:textColor="@color/ad333333"
+                android:text="潜江园林办事处工农路村口"
+                android:textSize="14dp" />
+            <LinearLayout
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/fc_main_name"
+                    android:drawablePadding="7dp"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/iv_task_overdue"
+                    android:textColor="@color/ad333333"
+                    android:text="孙林华"
+                    android:textSize="14dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/fc_main_telephone"
+                    android:drawablePadding="7dp"
+                    android:gravity="center_vertical"
+                    android:layout_toLeftOf="@+id/iv_task_overdue"
+                    android:textColor="@color/ad333333"
+                    android:text="18318181818"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/layout_content"
+            android:background="@drawable/fc_fine_tune"
+            android:gravity="center"
+            android:textColor="#DDFFFFFF" />
+    </RelativeLayout>
+</com.cango.adpickcar.customview.SlidingButtonView>

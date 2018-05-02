@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cango.adpickcar.detail.basicinfo.BasicInfoFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_item"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="11dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/ADDetailETStyle"-->
+                        <!--android:text="快递单号" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_InCarDlvNO"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车内物品清单" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <CheckBox
+                            android:id="@+id/cb1"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 钥匙" />
+
+                        <CheckBox
+                            android:id="@+id/cb2"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 身份证" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+                        <CheckBox
+                            android:id="@+id/cb3"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 行驶证" />
+
+                        <CheckBox
+                            android:id="@+id/cb4"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 驾驶证" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+                        <CheckBox
+                            android:id="@+id/cb5"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 银行卡" />
+
+                        <CheckBox
+                            android:id="@+id/cb6"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 钱包" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="9dp">
+
+                        <CheckBox
+                            android:id="@+id/cb7"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 现金" />
+
+                        <CheckBox
+                            android:id="@+id/cb8"
+                            style="@style/ADDetailcheckoutStyle"
+                            android:text=" 衣物" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1" />
+
+                <EditText
+                    android:id="@+id/et_InCarList"
+                    android:layout_width="0dp"
+                    android:layout_height="91dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/detail_et_bg_2"
+                    android:gravity="start"
+                    android:hint="其 它"
+                    android:padding="5dp"
+                    android:textColorHint="@color/ad666666"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="车内物品件数" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_InCarNmb"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/detail_et_bg_2"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="11dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:layout_weight="1">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/ADDetailETStyle"-->
+                        <!--android:text="快递公司" />-->
+
+                <!--</LinearLayout>-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/et_InCarDlvComp"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="拍摄照片" />
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_item_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/sorry" />
+
+    <include layout="@layout/no_data" />
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">@android:color/holo_red_light</color>
+    <color name="green">@android:color/holo_green_light</color>
+    <color name="blue">@android:color/holo_blue_light</color>
+    <color name="colorPrimary">#0db7d1</color>
+    <color name="colorPrimaryDark">#0db7d1</color>
+    <color name="colorAccent">#0db7d1</color>
+    <color name="addddddd">#dddddd</color>
+    <color name="ad888888">#888888</color>
+    <color name="mt9c9c9c">#9c9c9c</color>
+    <color name="ad666666">#666666</color>
+    <color name="ad333333">#333333</color>
+    <color name="mt303030">#303030</color>
+    <color name="adbbbbbb">#bbbbbb</color>
+    <color name="adbcbcbc">#bcbcbc</color>
+    <color name="adeaeaea">#eaeaea</color>
+    <color name="add0d0d0">#d0d0d0</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="fc_main_bg">#f1f1f1</color>
+    <color name="fc_text_white">#effbff</color>
+    <color name="fc_text_red">#f42d1f</color>
+    <color name="fc_text_blue">#13a6c1</color>
+    <color name="fc_text_bg_red">#f42e20</color>
+    <color name="fc_text_gray">#adadad</color>
+    <color name="fc_line_gray">#b4b4b4</color>
+    <color name="fc_text_main_blue">#1abbd4</color>
+    <color name="fc_text_main_text_blue">#0db7d1</color>
+
+
+
+</resources>

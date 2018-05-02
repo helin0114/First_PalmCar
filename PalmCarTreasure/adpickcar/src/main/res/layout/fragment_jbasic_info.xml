@@ -1,0 +1,496 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_jbasic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="交车方式" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="2">
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <TextView
+                        android:id="@+id/tv_jway1"
+                        style="@style/ADDetailETStyleOther" />
+                    <!--<Spinner-->
+                        <!--android:id="@+id/sp_jway"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent" />-->
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="计划交车时间" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jtime"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jtime"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="计划交车地点" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jaddress"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jaddress"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="91dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="start"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="取车身份验证" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="2"
+                    >
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--<Spinner-->
+                        <!--android:id="@+id/sp_jkyc"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent" />-->
+                    <TextView
+                        android:id="@+id/tv_jkyc"
+                        style="@style/ADDetailETStyleOther"
+                        android:layout_weight="2"
+                        android:layout_width="0dp"
+                        android:layout_height="34dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="取车人姓名" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_jname"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jname"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="取车人身份证号" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jidcard"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jidcard"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="取车人手机号" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jphone"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jphone"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:inputType="number"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="交车要求" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jrequest"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="91dp"
+                    android:gravity="right"
+                    android:textColor="@color/ad888888"
+                    android:textSize="14sp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jrequest"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="91dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="start"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="收款人" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jpayee"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jpayee"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="收款时间" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_jpaytime"
+                    style="@style/ADDetailETStyleOther"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"/>
+                <!--<EditText-->
+                    <!--android:id="@+id/et_jpaytime"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="34dp"-->
+                    <!--android:layout_weight="2"-->
+                    <!--android:background="@drawable/detail_et_bg_2"-->
+                    <!--android:gravity="center_vertical"-->
+                    <!--android:paddingEnd="5dp"-->
+                    <!--android:paddingStart="5dp"-->
+                    <!--android:textSize="14sp" />-->
+            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="交车里程数（公里）" />
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/et_mileage"
+                    android:layout_width="0dp"
+                    android:layout_height="34dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/detail_et_bg_2"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/addddddd" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="11dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1.1">
+
+                    <TextView
+                        style="@style/ADDetailETStyle"
+                        android:text="交车情况备注" />
+
+                    <!--<TextView style="@style/ADDetailStarStyle" />-->
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_jremark"
+                    android:layout_width="0dp"
+                    android:layout_height="91dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/detail_et_bg_2"
+                    android:gravity="start"
+                    android:padding="5dp"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_jok"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:background="@drawable/sign_in_icon"
+                android:gravity="top|center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="16dp"
+                android:text="交车完成"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_jfailure"
+                android:layout_width="300dp"
+                android:layout_height="62dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/delivery_button"
+                android:gravity="top|center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="16dp"
+                android:text="交车失败"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <include layout="@layout/sorry" />
+
+    <include layout="@layout/no_data" />
+</RelativeLayout>
+

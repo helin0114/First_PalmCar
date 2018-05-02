@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--<color name="colorPrimary">#d19d56</color>-->
+    <!--<color name="colorPrimaryDark">#cc8729</color>-->
+    <!--<color name="colorAccent">#cc8729</color>-->
+    <color name="navigationBarColor">@android:color/black</color>
+    <color name="windowBackground">@android:color/white</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="mt32ea94">#32ea94</color>
+    <color name="mt1c213d">#1c213d</color>
+    <color name="mt9c9c9c">#9c9c9c</color>
+    <color name="mt303030">#303030</color>
+    <color name="mteaeaea">#eaeaea</color>
+    <color name="mt18204f">#18204f</color>
+    <color name="mtff3337">#ff3337</color>
+    <color name="mtdcdcdc">#dcdcdc</color>
+    <color name="mtcdd0de">#cdd0de</color>
+</resources>
